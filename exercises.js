@@ -137,6 +137,7 @@ function averageTestScore(testScores) {
 function largestNumber(numbers) {
     //numbers is an array of integers
     //return the largest integer
+    return Math.max.apply(null, numbers)
 }
 
 //Do not modify code below this line.
