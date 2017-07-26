@@ -40,7 +40,10 @@ function isInteger(num) {
     //-10 -> true
     //otherwise return false
     //hint: you can solve this using Math.floor
+    return Math.abs(Math.floor(num)) > 0 || num === 0;
+
 }
+console.log()
 
 function fizzBuzz(num) {
     //if num is divisible by 3 return 'fizz'
