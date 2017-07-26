@@ -12,6 +12,14 @@ function greeting(language) {
     //language: 'English' -> 'Hello!'
     //language: 'Spanish' -> 'Hola!'
     //if language is undefined return 'Hello!'
+    switch (language) {
+        case 'German':
+            return 'Guten Tag!';
+        case 'Spanish':
+            return 'Hola!';
+        default:
+            return 'Hello!';
+    }
 }
 
 function isTenOrFive(num) {
