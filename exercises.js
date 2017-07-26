@@ -96,6 +96,8 @@ function incrementByOne(arr) {
 function addItemToArray(arr, item) {
     //add the item to the end of the array
     //return the array
+    arr.push(item)
+    return arr
 }
 
 function addItemToFront(arr, item) {
