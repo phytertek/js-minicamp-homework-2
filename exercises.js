@@ -90,6 +90,7 @@ function incrementByOne(arr) {
     //arr is an array of integers  
     //increase each integer by one
     //return the array
+    return arr.map(i => i + 1)
 }
 
 function addItemToArray(arr, item) {
