@@ -61,6 +61,14 @@ function isPrime(num) {
     //hint: a prime number is only evenly divisible by itself and 1
     //hint2: you can solve this using a for loop
     //note: 0 and 1 are NOT considered prime numbers
+    if (isNaN(num) || !isFinite(num) || num % 1 || num < 2) return false
+    if (num % 2 === 0) return num === 2
+    if (num % 3 === 0) return num === 3
+    var m = Math.sqrt(num)
+    for (let i = 5; i <= m; i += 6) {
+        if (num % i === 0 || num % (i + 2) === 0) return false
+    }
+    return true
 }
 
 function returnFirst(arr) {
