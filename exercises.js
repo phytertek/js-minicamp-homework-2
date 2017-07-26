@@ -131,6 +131,7 @@ function addNumbers(numbers) {
 function averageTestScore(testScores) {
     //testScores is an array.  Iterate over testScores and compute the average.
     //return the average
+    return testScores.reduce((acc, cv) => acc + cv) / testScores.length
 }
 
 function largestNumber(numbers) {
