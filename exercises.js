@@ -125,6 +125,7 @@ function contains(arr, item) {
 function addNumbers(numbers) {
     //numbers is an array of integers.
     //add all of the integers and return the value
+    return numbers.reduce((acc, cv) => acc + cv)
 }
 
 function averageTestScore(testScores) {
