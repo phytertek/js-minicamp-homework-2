@@ -25,6 +25,7 @@ function greeting(language) {
 function isTenOrFive(num) {
     //return true if num is 10 or 5
     //otherwise return false
+    return num === 10 || num === 5;
 }
 
 function isInRange(num) {
